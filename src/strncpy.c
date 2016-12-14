@@ -18,7 +18,10 @@ char		*ft_strncpy(char *dest, const char *src, size_t n)
 	if (i >= j)
 	{
 		while (src[k] && k < n)
-			dest[k] = ((char *)src)[k++];
+		{
+			dest[k] = ((char *)src)[k];
+			k++;
+		}
 		while (k < n)
 			dest[k++] = '\0';
 	}
