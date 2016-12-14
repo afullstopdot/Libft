@@ -11,6 +11,6 @@ void		*memset(void *src, int c, size_t n)
 
 	i = 0;
 	while (i <= n)
-		(unsigned char *)src[i++] = c;
+		((unsigned char *)src)[i++] = c;
 	return (src);
 }

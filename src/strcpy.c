@@ -13,13 +13,13 @@ char		*ft_strcpy(char *dest, const char *src)
 	int	k;
 
 	k = 0;
-	i = ft_strlen(dest);
-	j = ft_strlen(src);
+	i = ft_strlen((char *)dest);
+	j = ft_strlen((char *)src);
 	if (i >= j)
 	{
 		while (src[k])
 		{
-			dest[k] = (char *)src[k];
+			dest[k] = ((char *)src)[k];
 			k++;
 		}
 		dest[k] = '\0';
