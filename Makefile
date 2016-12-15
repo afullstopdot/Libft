@@ -6,7 +6,8 @@ COMPILED = 	bzero.o isalnum.o isalpha.o isascii.o isdigit.o isprint.o\
 			strncpy.o tolower.o toupper.o strcat.o strncat.o strlcat.o\
 			strchr.o strrchr.o strstr.o strnstr.o memalloc.o strnew.o\
 			memdel.o strdel.o strclr.o memcmp.o memchr.o memcpy.o\
-			memccpy.o striter.o striteri.o
+			memccpy.o striter.o striteri.o strmap.o strmapi.o strequ.o\
+			strnequ.o
 
 all: $(NAME)
 

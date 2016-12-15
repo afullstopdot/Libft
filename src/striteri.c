@@ -13,7 +13,7 @@ void		ft_striteri(char *s, void (*f)(unsigned int, char *))
 	count = 0;
 	while (s[count])
 	{
-		f(&s[count], count);
+		f(count, &(s[count]));
 		count++;
 	}
 }
