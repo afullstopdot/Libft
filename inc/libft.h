@@ -69,5 +69,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strnew(size_t size);
 char	*ft_strmap(char const *string, char (*func)(char));
 char	*ft_strmapi(char const *string, char (*func)(unsigned int, char));
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 
 #endif
