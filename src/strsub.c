@@ -1,4 +1,4 @@
-#include "../inc/libt.h"
+#include "../inc/libft.h"
 
 /*
 ** Allocates with malloc and returns a fresh substring from string given as an
