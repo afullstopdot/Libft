@@ -36,11 +36,17 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+void	ft_putchar(char c);
+void	ft_putchar_fd(char c, int fd);
 
 /*
 ** string functions.
 */
 
+void	ft_putstr(char const *str);
+void	ft_putstr_fd(char const *str, int fd);
+void	ft_putendl(char const *str);
+void	ft_putendl_fd(char const *str, int fd);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
