@@ -4,7 +4,8 @@ FLAGS = -Wall -Wextra -Werror
 COMPILED = 	bzero.o isalnum.o isalpha.o isascii.o isdigit.o isprint.o\
 			memset.o strcmp.o strcpy.o strdup.o strlen.o strncmp.o\
 			strncpy.o tolower.o toupper.o strcat.o strncat.o strlcat.o\
-			strchr.o strrchr.o strstr.o strnstr.o
+			strchr.o strrchr.o strstr.o strnstr.o memalloc.o strnew.o\
+			memdel.o strdel.o strclr.o
 
 all: $(NAME)
 
