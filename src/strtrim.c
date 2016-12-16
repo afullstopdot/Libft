@@ -1,4 +1,5 @@
 #include "../inc/libft.h"
+#include <stdio.h>
 
 /*
 ** This function allocates and returns a copy of the string given as an 
