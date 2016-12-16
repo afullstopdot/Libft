@@ -8,21 +8,14 @@
 
 char		*ft_strcpy(char *dest, const char *src)
 {
-	int	i;
-	int	j;
-	int	k;
+	int		k;
 
 	k = 0;
-	i = ft_strlen((char *)dest);
-	j = ft_strlen((char *)src);
-	if (i >= j)
+	while (src[k])
 	{
-		while (src[k])
-		{
-			dest[k] = ((char *)src)[k];
-			k++;
-		}
-		dest[k] = '\0';
+		dest[k] = ((char *)src)[k];
+		k++;
 	}
+	dest[k] = '\0';
 	return (dest);
 }
