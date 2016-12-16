@@ -16,7 +16,7 @@ all: $(NAME)
 $(NAME): $(COMPILED)
 	@ar rc $(NAME) $(COMPILED)
 	@ranlib $(NAME)
-	@echo "\033[92mLibft created successfully.\033[0m"
+	@echo "\033[92mlibft.a created successfully.\033[0m"
 
 $(COMPILED): %.o: src/%.c
 	@$(CC) -c $(FLAGS) $< -o $@
@@ -27,7 +27,7 @@ clean:
 
 fclean: clean
 	@-/bin/rm -f $(NAME)
-	@echo "\033[92mLibft removed successfully.\033[0m"
+	@echo "\033[92mlibft.a removed successfully.\033[0m"
 
 re: fclean all
 
