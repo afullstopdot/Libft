@@ -12,6 +12,14 @@
 #include <string.h>
 
 /*
+** constants
+*/
+
+#define TRUE 1
+#define FALSE 2
+#define ft_abs(x) ((x) < 0 ? -(x) : (x))
+
+/*
 ** generic functions
 */
 
@@ -57,6 +65,7 @@ int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
+char	*ft_itoa(int n);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
 char	*ft_strdup(const char *src);
