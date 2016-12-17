@@ -20,6 +20,7 @@
 #define ft_abs(x) ((x) < 0 ? -(x) : (x))
 
 /*
+** --- Mandatory Part ---
 ** generic functions
 */
 
@@ -67,6 +68,7 @@ int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_atoi(char const *nptr);
 char	*ft_itoa(int n);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
@@ -84,4 +86,15 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
+
+/*
+** Bonus Part
+*/
+
+
+/*
+** Extra Part
+*/
+
+
 #endif

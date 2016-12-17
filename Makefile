@@ -9,7 +9,8 @@ COMPILED = 	bzero.o isalnum.o isalpha.o isascii.o isdigit.o isprint.o\
 			memccpy.o striter.o striteri.o strmap.o strmapi.o strequ.o\
 			strnequ.o putchar.o putstr.o putendl.o putchar_fd.o\
 			putstr_fd.o putendl_fd.o strsub.o strjoin.o strtrim.o\
-			strsplit.o itoa.o putnbr.o putnbr_fd.o
+			strsplit.o itoa.o putnbr.o putnbr_fd.o atoi.o \
+			
 
 all: $(NAME)
 
