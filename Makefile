@@ -10,6 +10,7 @@ COMPILED = 	bzero.o isalnum.o isalpha.o isascii.o isdigit.o isprint.o\
 			strnequ.o putchar.o putstr.o putendl.o putchar_fd.o\
 			putstr_fd.o putendl_fd.o strsub.o strjoin.o strtrim.o\
 			strsplit.o itoa.o putnbr.o putnbr_fd.o atoi.o \
+			lstnew.o lstdelone.o lstdel.o lstadd.o lstiter.o lstmap.o
 			
 
 all: $(NAME)
