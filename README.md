@@ -24,25 +24,50 @@ Installing just requires a clone or download
 git clone https://github.com/afullstopdot/Libft.git on terminal or download the zip straigh from here.
 ```
 
-## Running the tests
+## Compiling the library
 
 For use
 
 ### Break down into end to end tests
 
-Compile the library using the Makefile
+Compile the library for use, using the Makefile
 
 ```
 Make all
 ```
 
-### And coding style tests
+Remove the object files
+
+```
+Make clean
+```
+
+Remove the libft library
+
+```
+Make fclean
+```
+
+Remove the library and recompile
+
+```
+Make re
+```
+
+Additionally, for checking WeThinkCode_ / 42 norm
+
+```
+Make norm1 && Make norm2
+```
+
+### 
 
 Link the library to your project
 
 ```
 gcc -o executable main.c libft.a or gcc -o executable main.c -L. -lft
 ```
+
 
 ## Authors
 
