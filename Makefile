@@ -1,16 +1,30 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: amarquez <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2016/12/19 09:23:44 by amarquez          #+#    #+#              #
+#    Updated: 2016/12/19 09:35:59 by amarquez         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
-COMPILED = 	bzero.o isalnum.o isalpha.o isascii.o isdigit.o isprint.o\
-			memset.o strcmp.o strcpy.o strdup.o strlen.o strncmp.o\
-			strncpy.o tolower.o toupper.o strcat.o strncat.o strlcat.o\
-			strchr.o strrchr.o strstr.o strnstr.o memalloc.o strnew.o\
-			memdel.o strdel.o strclr.o memcmp.o memchr.o memcpy.o\
-			memccpy.o striter.o striteri.o strmap.o strmapi.o strequ.o\
-			strnequ.o putchar.o putstr.o putendl.o putchar_fd.o\
-			putstr_fd.o putendl_fd.o strsub.o strjoin.o strtrim.o\
-			strsplit.o itoa.o putnbr.o putnbr_fd.o atoi.o \
-			lstnew.o lstdelone.o lstdel.o lstadd.o lstiter.o lstmap.o
+COMPILED = 	ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o\
+			ft_isprint.o ft_memset.o ft_strcmp.o ft_strcpy.o ft_strdup.o\
+			ft_strlen.o ft_strncmp.o ft_strncpy.o ft_tolower.o ft_toupper.o\
+			ft_strcat.o ft_strncat.o ft_strlcat.o ft_strchr.o ft_strrchr.o \
+			ft_strstr.o ft_strnstr.o ft_memalloc.o ft_strnew.o ft_memdel.o\
+			ft_strdel.o ft_strclr.o ft_memcmp.o ft_memchr.o ft_memcpy.o\
+			ft_memccpy.o ft_striter.o ft_striteri.o ft_strmap.o ft_strmapi.o\
+			ft_strequ.o ft_strnequ.o ft_putchar.o ft_putstr.o ft_putendl.o \
+			ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_strsub.o\
+			ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_itoa.o ft_putnbr.o\
+			ft_putnbr_fd.o ft_atoi.o ft_memmove.o ft_lstnew.o ft_lstdelone.o\
+			ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
 			
 
 all: $(NAME)
@@ -20,7 +34,7 @@ $(NAME): $(COMPILED)
 	@ranlib $(NAME)
 	@echo "\033[92mlibft.a created successfully.\033[0m"
 
-$(COMPILED): %.o: src/%.c
+$(COMPILED): %.o: %.c
 	@$(CC) -c $(FLAGS) $< -o $@
 
 clean:
@@ -35,4 +49,4 @@ re: fclean all
 
 count:
 	@echo '# of files:'
-	@ls src/ |  wc -l
+	@ls |  wc -l
