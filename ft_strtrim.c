@@ -6,7 +6,7 @@
 /*   By: amarquez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 08:56:52 by amarquez          #+#    #+#             */
-/*   Updated: 2016/12/19 15:36:18 by amarquez         ###   ########.fr       */
+/*   Updated: 2016/12/19 18:03:12 by amarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int			ft_isspace(char c)
 {
-	return (c == ' ' || c == '\n' || c == '\t' || c == '\v' || c == '\r' 
+	return (c == ' ' || c == '\n' || c == '\t' || c == '\v' || c == '\r'
 			|| c == '\f');
 }
 
@@ -45,13 +45,13 @@ static unsigned	int	*ft_start_end(char const *s)
 		while (s[start_end[0]])
 		{
 			if (!ft_isspace(s[start_end[0]]))
-				break;
+				break ;
 			start_end[0]++;
 		}
 		while (start_end[1] > 0)
 		{
 			if (!ft_isspace(s[start_end[1]]))
-				break;
+				break ;
 			start_end[1]--;
 		}
 	}

@@ -6,7 +6,7 @@
 /*   By: amarquez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 09:11:36 by amarquez          #+#    #+#             */
-/*   Updated: 2016/12/19 12:35:33 by amarquez         ###   ########.fr       */
+/*   Updated: 2016/12/19 17:38:03 by amarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,6 @@ void				*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		while (count < n--)
 			d[count + n] = s[count + n];
-		/*tdest += n;
-		tsrc += n;
-		while (n-- > 0)
-			*--tdest = *--tsrc;*/
 	}
 	return (dest);
 }

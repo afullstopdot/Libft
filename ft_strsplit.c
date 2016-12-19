@@ -6,11 +6,21 @@
 /*   By: amarquez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 08:55:51 by amarquez          #+#    #+#             */
-/*   Updated: 2016/12/19 16:02:17 by amarquez         ###   ########.fr       */
+/*   Updated: 2016/12/19 18:02:07 by amarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	**ft_norme_helper(void)
+{
+	char	**arr;
+
+	arr = NULL;
+	if ((arr = (char **)ft_memalloc(sizeof(char *) * 1)))
+		arr[0] = NULL;
+	return (arr);
+}
 
 static int	ft_arr_size(char const *s, char c)
 {
@@ -47,7 +57,7 @@ static char	*ft_get_next_word(char *s, char c, int *start)
 		word = ft_strsub(s, *start, len);
 		*start += len;
 	}
-	return (word);	
+	return (word);
 }
 
 char		**ft_strsplit(char const *s, char c)
@@ -60,12 +70,12 @@ char		**ft_strsplit(char const *s, char c)
 	arr = NULL;
 	start = 0;
 	count = 0;
-	size =  ft_arr_size(s,c);
+	size = ft_arr_size(s, c);
 	if (size > 0)
 	{
 		if ((arr = (char **)ft_memalloc(sizeof(char *) * size + 1)))
 		{
-			while (count <size)
+			while (count < size)
 			{
 				while (s[start] == c)
 					start++;
@@ -75,9 +85,6 @@ char		**ft_strsplit(char const *s, char c)
 		}
 	}
 	else
-	{
-		if ((arr = (char **)ft_memalloc(sizeof(char *) * 1)))
-			arr[0] = NULL;
-	}
+		arr = ft_norme_helper();
 	return (arr);
 }

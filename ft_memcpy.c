@@ -6,7 +6,7 @@
 /*   By: amarquez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 08:41:27 by amarquez          #+#    #+#             */
-/*   Updated: 2016/12/19 11:52:56 by amarquez         ###   ########.fr       */
+/*   Updated: 2016/12/19 17:37:41 by amarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void				*ft_memcpy(void *dest, const void *src, size_t n)
 	d = (unsigned char *)dest;
 	count = 0;
 	while (count < n)
-	{	
+	{
 		d[count] = s[count];
 		count++;
 	}
-	return (dest);                                                               
+	return (dest);
 }
