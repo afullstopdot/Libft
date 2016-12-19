@@ -19,7 +19,6 @@ gcc or clang compiler
 
 Installing just requires a clone or download
 
-Say what the step will be
 
 ```
 git clone https://github.com/afullstopdot/Libft.git on terminal or download the zip straigh from here.
