@@ -1,6 +1,6 @@
 # Libft 
 
-Recode functions from the standard C library, and some other very useful functions that is be able to use all along the program, and future ones too.
+Recode functions from the standard C library, and some other very useful functions that I will  be able to use all along this program, and future ones too, since as standard at WeThinkCode_ / 42. C Standard Library functions are forbidden.
 This Project challenges you to learn, and understand the inner workings of standard C library functions, in order to use them effectively in the future.
 
 ## Getting Started
